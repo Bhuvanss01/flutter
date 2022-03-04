@@ -36,7 +36,7 @@ final Tex = StateProvider<String>((ref) {
 
 class MyPage extends ConsumerWidget {
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context, ScopedReader ref) {
     final val = ref.watch(Tex);
 
     return Scaffold(
